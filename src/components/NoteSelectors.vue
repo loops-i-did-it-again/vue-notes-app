@@ -16,15 +16,9 @@ export default {
   components: {
     NoteSelector,
   },
+  props: ["notes"],
   data: function() {
     return {
-      notes: [
-        { id: 1, body: "This is the first note", timestamp: Date.now() },
-        { id: 2, body: "This is the second note", timestamp: Date.now() },
-        { id: 3, body: "This is the third note", timestamp: Date.now() },
-        { id: 4, body: "This is the fourth note", timestamp: Date.now() },
-        { id: 5, body: "This is the fifth note", timestamp: Date.now() },
-      ],
       selectedNoteId: 1,
     };
   },
