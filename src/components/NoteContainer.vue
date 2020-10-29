@@ -1,23 +1,17 @@
 <template>
   <div class="note-container">
     <NoteSelectors />
-    <div class="note-editor">
-      <p class="note-editor-info">Timestamp here...</p>
-      <textarea class="note-editor-input">
-          First note...
-
-          Note text here...
-        </textarea
-      >
-    </div>
+    <NoteEditor />
   </div>
 </template>
 
 <script>
 import NoteSelectors from "./NoteSelectors";
+import NoteEditor from "./NoteEditor";
 export default {
   components: {
     NoteSelectors,
+    NoteEditor,
   },
 };
 </script>
